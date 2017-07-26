@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
+import Spending from './Spending'
 
 class Income extends Component {
 
@@ -9,30 +10,6 @@ class Income extends Component {
 	}
 
 	render() {
-		const expenditures = this.props.expenditures
-		const listItem = expenditures.map((row) => 
-				<div>
-					<div className="box-category first">
-						<p>{row.name}:</p>
-						<div className="box-amount">
-							<span>{row.amount}</span>
-						</div>
-					</div>
-					<div className="box-category">
-						<p>From age:</p>
-						<div className="box-amount">
-							<span>{row.from_age}</span>
-						</div>
-					</div>
-					<div className="box-category">
-						<p>To age:</p>
-						<div className="box-amount">
-							<span>{row.to_age}</span>
-						</div>
-					</div>
-				</div>
-			)
-
 		return (
 			<div className="box box-left">
 				<div className="box-header">
@@ -66,7 +43,7 @@ class Income extends Component {
 						<span>Monthly Spending</span>
 					</div>
 
-					{listItem}
+					<Spending />
 
 
 					<div className="box-category first">
@@ -89,7 +66,7 @@ class Income extends Component {
 					</div>
 
 
-				</div>			
+				</div>
 			</div>
 		)
 	}
