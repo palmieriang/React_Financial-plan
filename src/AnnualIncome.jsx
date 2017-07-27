@@ -11,19 +11,19 @@ class AnnualIncome extends Component {
 				<div className="box-category first">
 				  <p>Annual salary:</p>
 				  <div className="box-amount">
-				    <span>{this.props.incomes[0].amount}</span>
+				    <span>{this.props.row.amount}</span>
 				  </div>
 				</div>
 				<div className="box-category">
 				  <p>From age:</p>
 				  <div className="box-amount">
-				    <span>{this.props.incomes[0].from_age}</span>
+				    <span>{this.props.row.from_age}</span>
 				  </div>
 				</div>
 				<div className="box-category">
 				  <p>To age:</p>
 				  <div className="box-amount">
-				    <span>{this.props.incomes[0].to_age}</span>
+				    <span>{this.props.row.to_age}</span>
 				  </div>
 				</div>
 			</div>

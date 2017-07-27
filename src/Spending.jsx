@@ -2,12 +2,9 @@ import React, { Component } from 'react'
 import './App.css'
 
 class Spending extends Component {
-
   render() {
-    console.log(this.props.row)
-
     return (
-      <div  className="box-row">
+      <div className="box-row">
         <div className="box-category first">
           <p>{this.props.row.name}:</p>
           <div className="box-amount">
