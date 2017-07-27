@@ -19,57 +19,19 @@ class Income extends Component {
         </div>
         <div className="box-body">
 
-          <div className="category-title">
-            <span>Annual Income</span>
-          </div>
-          <div className="box-category first">
-            <p>Annual salary:</p>
-            <div className="box-amount">
-              <span>{this.props.incomes[0].amount}</span>
-            </div>
-          </div>
-          <div className="box-category">
-            <p>From age:</p>
-            <div className="box-amount">
-              <span>{this.props.incomes[0].from_age}</span>
-            </div>
-          </div>
-          <div className="box-category">
-            <p>To age:</p>
-            <div className="box-amount">
-              <span>{this.props.incomes[0].to_age}</span>
-            </div>
-          </div>
+          {this.props.incomes.map((row) => (
+            <Spending row={row} key={row.name} />
+            )
+          )}
 
           <div className="category-title">
             <span>Monthly Spending</span>
           </div>
 
-
-          this.props.expenditures.map((row) => (
-            <Spending row={this.props} />
+          {this.props.expenditures.map((row) => (
+            <Spending row={row} key={row.name} />
             )
-          )
-
-          <div className="box-category first">
-            <p>Mortgage:</p>
-            <div className="box-amount">
-              <span>{this.props.expenditures[0].amount}</span>
-            </div>
-          </div>
-          <div className="box-category">
-            <p>From age:</p>
-            <div className="box-amount">
-              <span>{this.props.expenditures[0].from_age}</span>
-            </div>
-          </div>
-          <div className="box-category">
-            <p>To age:</p>
-            <div className="box-amount">
-              <span>{this.props.expenditures[0].to_age}</span>
-            </div>
-          </div>
-
+          )}
 
         </div>
       </div>

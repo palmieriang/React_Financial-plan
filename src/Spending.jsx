@@ -7,7 +7,7 @@ class Spending extends Component {
     console.log(this.props.row)
 
     return (
-      <div>
+      <div  className="box-row">
         <div className="box-category first">
           <p>{this.props.row.name}:</p>
           <div className="box-amount">

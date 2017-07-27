@@ -36,6 +36,9 @@
     width: 100%;
     font-weight: 600;
     color: #317b63; }
+  .box-body .box-row {
+    display: flex;
+    width: 100%; }
   .box-body .box-category {
     margin-right: 20px;
     margin-bottom: 20px;

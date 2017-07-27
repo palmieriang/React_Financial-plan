@@ -45,6 +45,11 @@
     color: #317b63;
   }
 
+  .box-row {
+    display: flex;
+    width: 100%;
+  }
+
   .box-category {
     // width: calc(33.3% - 20px);
     margin-right: 20px;
