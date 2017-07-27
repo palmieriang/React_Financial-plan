@@ -6,7 +6,7 @@ class Spending extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: this.props.row.amount
+      value: this.props.row
     }
   }
 
@@ -16,15 +16,15 @@ class Spending extends Component {
       <div className="box-row">
         <div className="box-category first">
           <p>{this.props.row.name}:</p>
-          <input className="box-amount" value={this.state.value} />
+          <input className="box-amount" type="number" value={this.state.value.amount} />
         </div>
         <div className="box-category">
           <p>From age:</p>
-          <input className="box-amount" value={this.state.value} />
+          <input className="box-amount" type="number" value={this.state.value.from_age} />
         </div>
         <div className="box-category">
           <p>To age:</p>
-          <input className="box-amount" value={this.state.value} />
+          <input className="box-amount" type="number" value={this.state.value.to_age} />
         </div>
       </div>
     )

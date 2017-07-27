@@ -10,7 +10,7 @@ const data = {
       "amount" : 45300,
       "from_age" : 30,
       "to_age" : 67,
-      "frequency" :  "annual" ,
+      "frequency" : "annual" ,
       "name" :  "Annual salary"
     }
   ],
@@ -19,22 +19,22 @@ const data = {
       "amount" : 1199,
       "from_age" : 30,
       "to_age" : 65,
-      "frequency" :  "monthly" ,
+      "frequency" : "monthly" ,
       "name" :  "Mortgage"
     },
     {
       "amount" : 1199,
       "from_age" : 30,
       "to_age" : 65,
-      "frequency" :  "monthly" ,
+      "frequency" : "monthly" ,
       "name" :  "Bills"
     },
     {
       "amount" : 1199,
       "from_age" : 30,
       "to_age" : 65,
-      "frequency" :  "monthly" ,
-      "name" :  "General spending"
+      "frequency" : "monthly" ,
+      "name" : "General spending"
     }
   ]
 }
