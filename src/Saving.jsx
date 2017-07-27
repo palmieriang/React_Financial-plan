@@ -3,34 +3,34 @@ import './App.css'
 
 class Saving extends Component {
 
-	constructor(props) {
-		super(props)
-		console.log(props.incomes[0])
-	}
+  constructor(props) {
+    super(props)
+    console.log(props.incomes[0])
+  }
 
-	render() {
-		const expenditures = this.props.expenditures
-		const ListItem = expenditures.map((row) =>
-			<div className="box-range">
-				<span>{row.name}</span>
-				<input type="range" />
-			</div>
-		)
+  render() {
+    const expenditures = this.props.expenditures
+    const ListItem = expenditures.map((row) =>
+      <div className="box-range">
+        <span>{row.name}</span>
+        <input type="range" />
+      </div>
+    )
 
-		return (
-			<div className="box box-rigth">
-				<div className="box-header">
-					<span>Spend Less</span>
-				</div>
-				<div className="box-body">
-					<p>Try reducing your monthly spending to see how your forecast could improve!</p>
+    return (
+      <div className="box box-rigth">
+        <div className="box-header">
+          <span>Spend Less</span>
+        </div>
+        <div className="box-body">
+          <p>Try reducing your monthly spending to see how your forecast could improve!</p>
 
-					{ListItem}
+          {ListItem}
 
-				</div>
-			</div>
-		)
-	}
+        </div>
+      </div>
+    )
+  }
 }
 
 export default Saving

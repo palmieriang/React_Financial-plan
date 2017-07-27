@@ -50,7 +50,15 @@
     border-radius: 3px;
     padding: 10px; }
   .box-body .box-range {
-    width: 100%; }
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between; }
+    .box-body .box-range span {
+      flex-grow: 1;
+      width: 100px; }
+    .box-body .box-range input {
+      flex-grow: 2; }
 
 @keyframes App-logo-spin {
   from {

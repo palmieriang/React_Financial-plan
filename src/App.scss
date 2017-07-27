@@ -57,8 +57,8 @@
   }
 
   .box-category.first {
-  flex-grow: 2;
-  width: 80px;
+    flex-grow: 2;
+    width: 80px;
   }
 
   .box-amount {
@@ -69,7 +69,21 @@
 
   .box-range {
     width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      flex-grow: 1;
+      width: 100px;
+    }
+
+    input {
+      flex-grow: 2;
+    } 
+
   }
+
 }
 
 

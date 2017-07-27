@@ -9,21 +9,21 @@ class Spending extends Component {
     return (
       <div>
         <div className="box-category first">
-          <p>{this.row.name}:</p>
+          <p>{this.props.row.name}:</p>
           <div className="box-amount">
-            <span>{this.row.amount}</span>
+            <span>{this.props.row.amount}</span>
           </div>
         </div>
         <div className="box-category">
           <p>From age:</p>
           <div className="box-amount">
-            <span>{this.row.from_age}</span>
+            <span>{this.props.row.from_age}</span>
           </div>
         </div>
         <div className="box-category">
           <p>To age:</p>
           <div className="box-amount">
-            <span>{this.row.to_age}</span>
+            <span>{this.props.row.to_age}</span>
           </div>
         </div>
       </div>
