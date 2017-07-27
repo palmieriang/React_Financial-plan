@@ -2,26 +2,29 @@ import React, { Component } from 'react'
 import './App.css'
 
 class Spending extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: this.props.row.amount
+    }
+  }
+
   render() {
+    console.log(this.props.row.amount)
     return (
       <div className="box-row">
         <div className="box-category first">
           <p>{this.props.row.name}:</p>
-          <div className="box-amount">
-            <span>{this.props.row.amount}</span>
-          </div>
+          <input className="box-amount" value={this.state.value} />
         </div>
         <div className="box-category">
           <p>From age:</p>
-          <div className="box-amount">
-            <span>{this.props.row.from_age}</span>
-          </div>
+          <input className="box-amount" value={this.state.value} />
         </div>
         <div className="box-category">
           <p>To age:</p>
-          <div className="box-amount">
-            <span>{this.props.row.to_age}</span>
-          </div>
+          <input className="box-amount" value={this.state.value} />
         </div>
       </div>
     )

@@ -33,13 +33,10 @@
 }
 
 .box-body {
-  display: flex;
-  flex-wrap: wrap;
   padding: 20px;
   color: #0a4658;
 
-  .category-title
-  {
+  .category-title {
     width: 100%;
     font-weight: 600;
     color: #317b63;
@@ -59,11 +56,18 @@
     p {
       margin-bottom: 5px;
     }
+
+    input {
+      width: 70px;
+    }
   }
 
   .box-category.first {
     flex-grow: 2;
-    width: 80px;
+
+    input {
+      width: calc(100% - 20px);
+    }
   }
 
   .box-amount {

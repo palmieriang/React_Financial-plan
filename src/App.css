@@ -28,8 +28,6 @@
   text-transform: uppercase; }
 
 .box-body {
-  display: flex;
-  flex-wrap: wrap;
   padding: 20px;
   color: #0a4658; }
   .box-body .category-title {
@@ -45,9 +43,12 @@
     flex-grow: 1; }
     .box-body .box-category p {
       margin-bottom: 5px; }
+    .box-body .box-category input {
+      width: 70px; }
   .box-body .box-category.first {
-    flex-grow: 2;
-    width: 80px; }
+    flex-grow: 2; }
+    .box-body .box-category.first input {
+      width: calc(100% - 20px); }
   .box-body .box-amount {
     border: 1px solid #0a4658;
     border-radius: 3px;

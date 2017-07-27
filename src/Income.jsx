@@ -11,6 +11,10 @@ class Income extends Component {
         </div>
         <div className="box-body">
 
+          <div className="category-title">
+            <span>Annual Income</span>
+          </div>
+
           {this.props.incomes.map((row) => (
             <Spending row={row} key={row.name} />
             )
