@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 
-class Saving extends Component {
+class ListItem extends Component {
 
   constructor(props) {
     super(props)
@@ -17,14 +17,22 @@ class Saving extends Component {
     this.setState({value: event.target.value});
   }
 
-  render() {
-    const expenditures = this.props.expenditures
-    const ListItem = expenditures.map((row, i) =>
-      <div className="box-range" key={i} >
+  render () {
+    const {row} = this.props
+
+    return (
+      <div className="box-range">
         <span>{row.name}</span>
-        <input type="range" min="0" max={row.amount} value={row.amount} step="1" onChange={this.changeInput} />
+        <input type="range" min="0" max={row.amount} value={this.state.value.amount} step="1" onChange={this.changeInput}/>
       </div>
     )
+  }
+}
+
+class Saving extends Component {
+
+  render() {
+    const {expenditures} = this.props
 
     return (
       <div className="box box-rigth">
@@ -34,7 +42,7 @@ class Saving extends Component {
         <div className="box-body">
           <p>Try reducing your monthly spending to see how your forecast could improve!</p>
 
-          {ListItem}
+          {expenditures.map((row, i) => <ListItem key={i} row={row} />)}
 
         </div>
       </div>
