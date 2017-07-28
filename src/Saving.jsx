@@ -10,8 +10,8 @@ class Saving extends Component {
 
   render() {
     const expenditures = this.props.expenditures
-    const ListItem = expenditures.map((row) =>
-      <div className="box-range">
+    const ListItem = expenditures.map((row, i) =>
+      <div className="box-range" key={i} >
         <span>{row.name}</span>
         <input type="range" />
       </div>

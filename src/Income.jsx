@@ -3,6 +3,7 @@ import './App.css'
 import Spending from './Spending'
 
 class Income extends Component {
+
   render() {
     return (
       <div className="box box-left">
@@ -15,8 +16,8 @@ class Income extends Component {
             <span>Annual Income</span>
           </div>
 
-          {this.props.incomes.map((row) => (
-            <Spending row={row} key={row.name} />
+          {this.props.incomes.map((row, i) => (
+            <Spending row={row} key={i} />
             )
           )}
 
@@ -24,8 +25,8 @@ class Income extends Component {
             <span>Monthly Spending</span>
           </div>
 
-          {this.props.expenditures.map((row) => (
-            <Spending row={row} key={row.name} />
+          {this.props.expenditures.map((row, i) => (
+            <Spending row={row} key={i} />
             )
           )}
 
