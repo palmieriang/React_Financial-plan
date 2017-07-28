@@ -5,7 +5,11 @@ class Saving extends Component {
 
   constructor(props) {
     super(props)
-    console.log(props.incomes[0])
+    console.log(props)
+  }
+
+  changeInput(event) {
+    console.log(event.target.value)
   }
 
   render() {
@@ -13,7 +17,7 @@ class Saving extends Component {
     const ListItem = expenditures.map((row, i) =>
       <div className="box-range" key={i} >
         <span>{row.name}</span>
-        <input type="range" />
+        <input type="range" min="0" max={row.amount} step="1" onChange={this.changeInput} />
       </div>
     )
 
