@@ -44,6 +44,8 @@ class Saving extends Component {
 
           {expenditures.map((row, i) => <ListItem key={i} row={row} />)}
 
+          <p>This means you’re saving <span>TOT</span> per month</p>
+          <a className="find-button" href="https://www.google.co.uk/" target="_blank">Find ways to save</a>
         </div>
       </div>
     )

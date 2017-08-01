@@ -57,12 +57,26 @@
     width: 100%;
     margin: 10px 0;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    text-align: left; }
     .box-body .box-range span {
       flex-grow: 1;
       width: 100px; }
     .box-body .box-range input {
       flex-grow: 2; }
+
+.box-rigth {
+  line-height: 1.5;
+  text-align: center; }
+
+.find-button {
+  display: inline-block;
+  width: 50%;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #5ab005;
+  border-radius: 4px;
+  color: #5ab005; }
 
 @keyframes App-logo-spin {
   from {

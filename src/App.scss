@@ -81,6 +81,7 @@
     margin: 10px 0;
     display: flex;
     justify-content: space-between;
+    text-align: left;
 
     span {
       flex-grow: 1;
@@ -95,6 +96,20 @@
 
 }
 
+.box-rigth {
+  line-height: 1.5;
+  text-align: center;
+}
+
+.find-button {
+  display: inline-block;
+  width: 50%;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #5ab005;
+  border-radius: 4px;
+  color: #5ab005;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
