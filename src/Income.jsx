@@ -5,6 +5,9 @@ import Spending from './Spending'
 class Income extends Component {
 
   render() {
+
+    const {incomes, expenditures} = this.props
+
     return (
       <div className="box box-left">
         <div className="box-header">
@@ -16,7 +19,7 @@ class Income extends Component {
             <span>Annual Income</span>
           </div>
 
-          {this.props.incomes.map((row, i) => (
+          {incomes.map((row, i) => (
             <Spending row={row} key={i} />
             )
           )}
@@ -25,7 +28,7 @@ class Income extends Component {
             <span>Monthly Spending</span>
           </div>
 
-          {this.props.expenditures.map((row, i) => (
+          {expenditures.map((row, i) => (
             <Spending row={row} key={i} />
             )
           )}
