@@ -9,13 +9,13 @@ class Income extends Component {
     const {incomes, expenditures} = this.props
 
     return (
-      <div className="box box-left">
-        <div className="box-header">
+      <div className='box box-left'>
+        <div className='box-header'>
           <span>Your income & spend</span>
         </div>
-        <div className="box-body">
+        <div className='box-body'>
 
-          <div className="category-title">
+          <div className='category-title'>
             <span>Annual Income</span>
           </div>
 
@@ -24,7 +24,7 @@ class Income extends Component {
             )
           )}
 
-          <div className="category-title">
+          <div className='category-title'>
             <span>Monthly Spending</span>
           </div>
 

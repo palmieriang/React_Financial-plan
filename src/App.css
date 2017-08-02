@@ -78,6 +78,23 @@
   border-radius: 4px;
   color: #5ab005; }
 
+.box-feedback {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  text-decoration: underline; }
+  .box-feedback .icon {
+    height: 30px;
+    margin: 5px; }
+  .box-feedback .flip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH"; }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg); }

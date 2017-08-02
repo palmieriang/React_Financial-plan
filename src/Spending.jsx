@@ -18,18 +18,18 @@ class Spending extends Component {
   render() {
     console.log(this.props.row.amount)
     return (
-      <div className="box-row">
-        <div className="box-category first">
+      <div className='box-row'>
+        <div className='box-category first'>
           <p>{this.props.row.name}:</p>
-          <input className="box-amount" type="number" value={this.state.value.amount} onChange={this.changeInput} />
+          <input className='box-amount' type='number' value={this.state.value.amount} onChange={this.changeInput} />
         </div>
-        <div className="box-category">
+        <div className='box-category'>
           <p>From age:</p>
-          <input className="box-amount" type="number" value={this.state.value.from_age} onChange={this.changeInput} />
+          <input className='box-amount' type='number' value={this.state.value.from_age} onChange={this.changeInput} />
         </div>
-        <div className="box-category">
+        <div className='box-category'>
           <p>To age:</p>
-          <input className="box-amount" type="number" value={this.state.value.to_age} onChange={this.changeInput} />
+          <input className='box-amount' type='number' value={this.state.value.to_age} onChange={this.changeInput} />
         </div>
       </div>
     )

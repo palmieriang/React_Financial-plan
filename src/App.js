@@ -5,36 +5,36 @@ import Income from './Income'
 import Saving from './Saving'
 
 const data = {
-  "incomes" : [
+  'incomes' : [
     {
-      "amount" : 45300,
-      "from_age" : 30,
-      "to_age" : 67,
-      "frequency" : "annual" ,
-      "name" :  "Annual salary"
+      'amount' : 45300,
+      'from_age' : 30,
+      'to_age' : 67,
+      'frequency' : 'annual' ,
+      'name' :  'Annual salary'
     }
   ],
-  "expenditures" : [
+  'expenditures' : [
     {
-      "amount" : 1199,
-      "from_age" : 30,
-      "to_age" : 65,
-      "frequency" : "monthly" ,
-      "name" :  "Mortgage"
+      'amount' : 1199,
+      'from_age' : 30,
+      'to_age' : 65,
+      'frequency' : 'monthly' ,
+      'name' :  'Mortgage'
     },
     {
-      "amount" : 1199,
-      "from_age" : 30,
-      "to_age" : 65,
-      "frequency" : "monthly" ,
-      "name" :  "Bills"
+      'amount' : 1199,
+      'from_age' : 30,
+      'to_age' : 65,
+      'frequency' : 'monthly' ,
+      'name' :  'Bills'
     },
     {
-      "amount" : 1199,
-      "from_age" : 30,
-      "to_age" : 65,
-      "frequency" : "monthly" ,
-      "name" : "General spending"
+      'amount' : 1199,
+      'from_age' : 30,
+      'to_age' : 65,
+      'frequency' : 'monthly' ,
+      'name' : 'General spending'
     }
   ]
 }
@@ -42,11 +42,11 @@ const data = {
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <div className='App'>
+        <div className='App-header'>
+          <img src={logo} className='App-logo' alt='logo' />
         </div>
-        <div className="app-body">
+        <div className='app-body'>
           <Income {...data} />
           <Saving {...data} />
         </div>
