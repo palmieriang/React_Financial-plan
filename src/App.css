@@ -32,6 +32,7 @@
   color: #0a4658; }
   .box-body .category-title {
     width: 100%;
+    margin: 10px 0;
     font-weight: 600;
     color: #317b63; }
   .box-body .box-row {
@@ -39,10 +40,10 @@
     width: 100%; }
   .box-body .box-category {
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     flex-grow: 1; }
     .box-body .box-category p {
-      margin-bottom: 5px; }
+      margin: 5px 0; }
     .box-body .box-category input {
       width: 70px; }
   .box-body .box-category.first {
@@ -54,20 +55,26 @@
     border-radius: 3px;
     padding: 10px; }
   .box-body .box-range {
-    width: 100%;
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    text-align: left; }
-    .box-body .box-range span {
-      flex-grow: 1;
-      width: 100px; }
-    .box-body .box-range input {
-      flex-grow: 2; }
+    margin: 25px 0; }
+    .box-body .box-range .row-range {
+      width: 100%;
+      margin: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      text-align: left; }
+      .box-body .box-range .row-range span {
+        flex-grow: 1;
+        width: 100px; }
+      .box-body .box-range .row-range input {
+        flex-grow: 2; }
 
 .box-rigth {
   line-height: 1.5;
   text-align: center; }
+  .box-rigth .box-body {
+    padding: 10px 20px 5px 20px; }
+  .box-rigth p {
+    font-size: 17px; }
 
 .find-button {
   display: inline-block;
@@ -75,18 +82,18 @@
   text-decoration: none;
   padding: 10px;
   border: 1px solid #5ab005;
-  border-radius: 4px;
-  color: #5ab005; }
+  border-radius: 4px; }
 
 .box-feedback {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px;
+  padding: 15px 20px;
   text-decoration: underline; }
   .box-feedback .icon {
     height: 30px;
-    margin: 5px; }
+    margin: 5px;
+    margin-left: 10px; }
   .box-feedback .flip {
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -94,6 +101,9 @@
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH"; }
+
+.green {
+  color: #5ab005; }
 
 @keyframes App-logo-spin {
   from {

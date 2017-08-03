@@ -24,8 +24,8 @@ class Feedback extends Component {
   render() {
 		console.log(this.state.positiveFeedback);
     return (
-      <div className='box-feedback'>
-      	{!this.state.userFeedback && <div>
+      <div>
+      	{!this.state.userFeedback && <div className='box-feedback'>
 	        <span>Was this helpful?</span>
 	        <img src={thumbUp} className='icon' alt='thumbUp' onClick={this.addFeedback} />
 	        <img src={thumbDown} className='icon flip' alt='thumbDown' />      		

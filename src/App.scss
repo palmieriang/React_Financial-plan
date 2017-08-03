@@ -38,6 +38,7 @@
 
   .category-title {
     width: 100%;
+    margin: 10px 0;
     font-weight: 600;
     color: #317b63;
   }
@@ -50,11 +51,11 @@
   .box-category {
     // width: calc(33.3% - 20px);
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     flex-grow: 1;
 
     p {
-      margin-bottom: 5px;
+      margin: 5px 0;
     }
 
     input {
@@ -77,20 +78,25 @@
   }
 
   .box-range {
-    width: 100%;
-    margin: 10px 0;
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
+    margin: 25px 0;
+  
+    .row-range {
+      width: 100%;
+      margin: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
 
-    span {
-      flex-grow: 1;
-      width: 100px;
+      span {
+        flex-grow: 1;
+        width: 100px;
+      }
+
+      input {
+        flex-grow: 2;
+      } 
+
     }
-
-    input {
-      flex-grow: 2;
-    } 
 
   }
 
@@ -99,6 +105,14 @@
 .box-rigth {
   line-height: 1.5;
   text-align: center;
+
+  .box-body {
+    padding: 10px 20px 5px 20px;
+  }
+
+  p {
+    font-size: 17px;
+  }
 }
 
 .find-button {
@@ -108,19 +122,19 @@
   padding: 10px;
   border: 1px solid #5ab005;
   border-radius: 4px;
-  color: #5ab005;
 }
 
 .box-feedback {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px;
+  padding: 15px 20px;
   text-decoration: underline;
 
   .icon {
   height: 30px;
   margin: 5px;
+  margin-left: 10px;
   }
 
   & .flip {
@@ -131,6 +145,10 @@
     filter: FlipH;
     -ms-filter: "FlipH";
   }
+}
+
+.green {
+  color: #5ab005;
 }
 
 @keyframes App-logo-spin {
