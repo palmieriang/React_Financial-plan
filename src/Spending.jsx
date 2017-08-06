@@ -16,7 +16,6 @@ class Spending extends Component {
   }
 
   render() {
-    console.log(this.props.row.amount)
     return (
       <div className='box-row'>
         <div className='box-category first'>

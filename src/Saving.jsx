@@ -6,7 +6,6 @@ class ListItem extends Component {
 
   constructor(props) {
     super(props)
-    console.log(props)
     this.state = {
       value: this.props.row,
       diff1: 0,
@@ -18,21 +17,22 @@ class ListItem extends Component {
   }
 
   changeInput(event) {
-    console.log(event.target.value)
     this.setState({
       value: event.target.value,
       diff1: this.props.row.amount - event.target.value,
+      diff2: this.props.row.amount - event.target.value,
+      diff3: this.props.row.amount - event.target.value,
       total: this.state.diff1 + this.state.diff2 + this.state.diff3
     })
   }
 
   render () {
-    const {row} = this.props
+    const {row, index} = this.props
 
     return (
       <div className='row-range'>
         <span><strong>{row.name}</strong></span>
-        <input type='range' min='0' max={row.amount} value={this.state.value.amount} step='1' onChange={event => this.changeInput(event)} />
+        <input type='range' min='0' max={row.amount} value={this.state.value.amount} step='1' onChange={event => this.changeInput(event, index)} />
       </div>
     )
   }
@@ -51,7 +51,7 @@ class Saving extends Component {
         <div className='box-body'>
           <p>Try reducing your monthly spending to see how your forecast could improve!</p>
           <div className="box-range">
-            {expenditures.map((row, i) => <ListItem key={i} row={row} />)}
+            {expenditures.map((row, i) => <ListItem key={i} row={row} index={i} />)}
           </div>
           <p><strong>This means you’re saving <span className='green'>TOT</span> per month</strong></p>
           <a className='find-button green' href='https://www.google.co.uk/' target='_blank'>Find ways to save</a>

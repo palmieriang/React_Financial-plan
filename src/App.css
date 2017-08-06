@@ -1,14 +1,26 @@
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px; }
-
 .App-header {
-  background-color: #222;
-  padding: 20px;
-  color: white; }
+  background-color: #6bb91d;
+  padding: 5px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+  .App-header .logo {
+    font-size: 40px; }
+  .App-header .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap; }
+  .App-header .user-button {
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px; }
 
 .app-body {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .box {
   width: 420px;
@@ -49,7 +61,8 @@
   .box-body .box-category.first {
     flex-grow: 2; }
     .box-body .box-category.first input {
-      width: calc(100% - 20px); }
+      width: calc(100% - 20px);
+      min-width: 120px; }
   .box-body .box-amount {
     border: 1px solid #0a4658;
     border-radius: 3px;

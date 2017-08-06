@@ -8,27 +8,32 @@ class Feedback extends Component {
 		super(props);
 		this.state = {
 			userFeedback: false,
-			positiveFeedback: 0,
-			negativeFeedback: 0
+			feedback: {positive: 0, negative: 0}
 		}
 		this.addFeedback = this.addFeedback.bind(this)
 	}
 
-	addFeedback(event) {
-		this.setState({
-			userFeedback: true,
-			positiveFeedback: this.state.positiveFeedback + 1
-		})
+	addFeedback(event, type) {
+    if (type === 'positive') {
+      this.setState({
+        userFeedback: true,
+        feedback: this.state.feedback + 1
+      })
+    } else if (type === 'negative') {
+      this.setState({
+        userFeedback: true,
+        feedback: this.state.feedback + 1
+      })
+    }
 	}
 
   render() {
-		console.log(this.state.positiveFeedback);
     return (
       <div>
       	{!this.state.userFeedback && <div className='box-feedback'>
 	        <span>Was this helpful?</span>
-	        <img src={thumbUp} className='icon' alt='thumbUp' onClick={this.addFeedback} />
-	        <img src={thumbDown} className='icon flip' alt='thumbDown' />      		
+	        <img src={thumbUp} className='icon' alt='thumbUp' onClick={event => this.addFeedback(event, 'positive')} />
+	        <img src={thumbDown} className='icon flip' alt='thumbDown' onClick={event => this.addFeedback(event, 'negative')} />
       	</div>}
       	{this.state.userFeedback && <p>Thanks for your feedback!</p>}
       </div>

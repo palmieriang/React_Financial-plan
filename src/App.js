@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
 import './App.css'
 import Income from './Income'
 import Saving from './Saving'
+import Header from './Header'
 
 const data = {
   'incomes' : [
@@ -43,9 +43,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <div className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-        </div>
+        <Header />
         <div className='app-body'>
           <Income {...data} />
           <Saving {...data} />

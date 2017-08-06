@@ -1,16 +1,33 @@
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
-  background-color: #222;
-  padding: 20px;
+  background-color: #6bb91d;
+  padding: 5px;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .logo {
+    font-size: 40px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+
+  .user-button {
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
+  }
 }
 
 .app-body {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -68,6 +85,7 @@
 
     input {
       width: calc(100% - 20px);
+      min-width: 120px;
     }
   }
 
@@ -79,7 +97,7 @@
 
   .box-range {
     margin: 25px 0;
-  
+
     .row-range {
       width: 100%;
       margin: 15px 0;
@@ -94,7 +112,7 @@
 
       input {
         flex-grow: 2;
-      } 
+      }
 
     }
 
